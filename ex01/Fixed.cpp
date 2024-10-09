@@ -7,6 +7,18 @@ Fixed::Fixed(void): _value(0)
 	std::cout << "Fixed object created with default constructor" << std::endl;
 }
 
+Fixed::Fixed(const int value)
+{
+	std::cout << "Fixed object created with int constructor" << std::endl;
+	this->_value = value << Fixed::_fixed;
+}
+
+Fixed::Fixed(const float value)
+{
+	std::cout << "Fixed object created with float constructor" << std::endl;
+	this->_value = roundf(value * (1 << Fixed::_fixed));
+}
+
 Fixed::~Fixed(void)
 {
 	std::cout << "Fixed object destroyed" << std::endl;

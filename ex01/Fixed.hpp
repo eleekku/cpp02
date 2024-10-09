@@ -11,6 +11,8 @@ class Fixed
 
 	public:
 			Fixed();
+			Fixed(const int value);
+			Fixed(const float value);
 			~Fixed();
 			Fixed(const Fixed &copy);
 			Fixed &operator=(const Fixed &copy);
