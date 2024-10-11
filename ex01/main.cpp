@@ -1,5 +1,4 @@
 #include "Fixed.hpp"
-#include <cassert>
 
 int main( void ) {
 

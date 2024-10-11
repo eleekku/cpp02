@@ -56,7 +56,7 @@ float Fixed::toFloat(void) const
 	return ((float(this->_value) / (1 << Fixed::_fixed)));
 }
 
-int Fixed::toInt(void) const
+int	Fixed::toInt(void) const
 {
 	return (this->_value >> Fixed::_fixed);
 }
@@ -67,4 +67,5 @@ std::ostream &operator<<(std::ostream &out, const Fixed &fixed)
     out << fixed.toFloat();
     return out;
 }
+
 
